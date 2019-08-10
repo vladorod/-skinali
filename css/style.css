@@ -1,4 +1,187 @@
 * {
   box-border: border-box;
 }
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Proxima Nova Light", sans-serif;
+  color: #262626;
+}
+
+.button-o {
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #507fe1;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  background: none;
+}
+
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__mobile, .navbar__lendline {
+  text-align: right;
+}
+
+.navbar__phone {
+  text-decoration: none;
+  font-size: 19px;
+  display: block;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  color: #262626;
+}
+
+.navbar__small-text {
+  font-size: 14px;
+  color: #7b7b79;
+  text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background: #507fe1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.menu__active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-style: 17px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgba(81, 11, 186, 0.1);
+  border-left: 1px solid rgba(81, 11, 186, 0.1);
+  height: 80px;
+  width: 70px;
+}
+
+.menu-button__line {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #89a9ed;
+  margin: 2px 0;
+}
+
+.logo__text {
+  font-size: 18px;
+  margin-botton: 5px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.logo__description {
+  font-size: 14px;
+  display: block;
+  color: #6b6b6b;
+}
+
+.hero {
+  background: #ffffff url("../img/hero-bg.jpg") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 200px;
+  padding-bottom: 270px;
+}
+
+.hero__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: "Proxima Nova Light", sans-serif;
+}
+
+.hero__subtitile {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 67px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
