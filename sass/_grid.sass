@@ -4,3 +4,31 @@
 .container 
     max-width: 1170px
     margin: auto
+
+@media (max-width: 1199px)
+    .container 
+        max-width: 960px
+
+@media  (max-width: 991px)
+    .container 
+        max-width: 750px
+    .navbar
+        &__mobile, &__lendline
+            display: none 
+            
+@media  (max-width: 768px)
+    .container 
+        max-width: 100%
+        padding: 0 30px
+
+@media  (max-width: 576px)
+    .container 
+        max-width: 100%
+        padding: 0 30px
+    .logo
+        display: none
+    .menu
+        &__nav
+            flex-direction: column
+        &__link
+            margin-bottom: 20px

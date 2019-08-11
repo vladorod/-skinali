@@ -1,5 +1,5 @@
 .hero
-    background: #ffffff url('../img/hero-bg.jpg') no-repeat center top 80px
+    background: #ffffff url('../img/hero-bg.png') no-repeat center top 80px
     background-size: contain
     padding-top: 200px
     padding-bottom: 270px
@@ -12,3 +12,8 @@
         font-size: 30px
         margin-bottom: 67px
         +bold
+    
+@media (max-width: 991px)
+    .hero
+        background-size: cover
+        background-position: top left 30%
