@@ -91,6 +91,10 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.bg-secondary {
+  background: #f1f1f1;
+}
+
 @media (max-width: 576px) {
   .button-o {
     font-size: 10px;
@@ -243,5 +247,40 @@ body {
     background-size: cover;
     background-position: top left 30%;
   }
+}
+
+.offer {
+  padding: 129px 0;
+}
+
+.offer-block {
+  background: #ffffff;
+  padding: 80px;
+}
+
+.offer__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  margin-bottom: 21px;
+}
+
+.offer__subtitle {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 48px;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
 }
 /*# sourceMappingURL=style.css.map */
