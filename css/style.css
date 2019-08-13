@@ -46,6 +46,9 @@
   .menu__link {
     margin-bottom: 20px;
   }
+  .menu__link:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @font-face {
@@ -144,11 +147,13 @@ body {
   transition: 0.2s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
 }
 
-.menu__active {
+.menu_active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -213,10 +218,11 @@ body {
 }
 
 .hero {
-  background: #ffffff url("../img/hero-bg.png") no-repeat center top 80px;
+  background: #ffffff url("../img/hero-bg.png") no-repeat center top;
   background-size: contain;
   padding-top: 200px;
   padding-bottom: 270px;
+  margin-top: 80px;
 }
 
 .hero__title {
