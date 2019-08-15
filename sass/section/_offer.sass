@@ -3,6 +3,8 @@
     &-block
         background: #ffffff
         padding: 80px
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3)
+        margin-top: -200px
     &__title
         font-size: 25px
         text-transform: uppercase
@@ -13,10 +15,40 @@
         font-size: 21px
         margin-bottom: 48px
 .form
-    &__row 
+    &__row
         display: flex
-        justify-content: space-between
         align-items: center
         max-width: 900px
+        margin-bottom: 25px
+        &:last-child 
+            margin: 0 
     &__label
-        
+        display: block 
+        font-size: 17px
+        margin-bottom: 15px
+    &__group
+        flex-basis: 33.33%
+    &__input
+        width: 90% 
+        border-right-width: 0px
+        &:last-child
+            border-right-width: 1px
+    &__button
+        height: 80px
+@media  (max-width: 991px)
+    .form
+        &__row
+            flex-direction: column
+            &-checkbox
+                flex-direction: row 
+        &__group
+            flex-basis: 100%
+            width: 100%
+        &__input 
+            margin-bottom: 20px
+        &__button 
+            width: 100%
+    .offer
+        &-block
+            padding: 20px
+
