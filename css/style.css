@@ -83,12 +83,17 @@ body {
 }
 
 .button {
+  position: relative;
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
   background-color: #507fe1;
   color: #ffffff;
   font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.button:focus {
+  border-right-width: 1px;
 }
 
 .bg-secondary {
@@ -335,6 +340,7 @@ body {
 .form__group {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
+  margin-left: 2px;
 }
 
 .form__input {
@@ -347,7 +353,7 @@ body {
 }
 
 .form__button {
-  height: 80px;
+  height: 84px;
 }
 
 @media (max-width: 991px) {
