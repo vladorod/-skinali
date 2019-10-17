@@ -1,1 +1,1 @@
-demo https://vladorod.github.io/skinali/
+demo https://vladorod.github.io/-skinali/
